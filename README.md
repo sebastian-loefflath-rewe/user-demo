@@ -19,6 +19,8 @@ cd backend
 
 ## Task
 
+If you encounter any problems, please reach out to us. We are happy to help. And please do not spend to much time on this.
+
 We have a small application that currently just returns a list of users from the database and displays them.
 Your task is to extend the application.
 
