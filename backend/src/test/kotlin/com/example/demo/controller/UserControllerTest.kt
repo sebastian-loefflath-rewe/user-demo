@@ -24,6 +24,4 @@ class UserControllerTest @Autowired constructor(
             .andExpect(jsonPath("$.dateOfBirth").exists())
     }
     
-    
-    
 }
