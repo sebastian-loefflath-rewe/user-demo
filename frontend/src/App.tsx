@@ -3,15 +3,15 @@ import './App.css'
 import { UserDTO, User } from './User';
 
 function App() {
-    const [user, setUser] = useState<UserDTO | undefined>(undefined);
+    const [users, setUsers] = useState<UserDTO[]>([]);
     useEffect(() => {
-        fetch('http://localhost:8080/users/85337937-20A9-4DA9-ADB1-74EFECBDF04F')
-            .then(response => response.json() as Promise<UserDTO>)
-            .then(data => setUser(data));
+        fetch(`http://localhost:8080/users`)
+            .then(response => response.json() as Promise<UserDTO[]>)
+            .then(data => setUsers(data));
     }, []);
   return (
     <>
-        {user && <User user={user} />}
+        {users.map(user => <User key={user.id} user={user} />)}
     </>
   )
 }
