@@ -19,5 +19,5 @@ data class UserDAO(
     val id: UUID = UUID(0,0),
     val email: String,
     @Column(columnDefinition = "DATE")
-    val dateOfBirth: LocalDate,
+    val dateOfBirth: LocalDate? = null,
 )
