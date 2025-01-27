@@ -19,7 +19,7 @@ cd backend
 
 ## Task
 
-If you encounter any problems, please reach out to us. We are happy to help. And please do not spend to much time on this.
+If you encounter any problems, please reach out to us. We are happy to help. And please do not spend too much time on this.
 
 We have a small application that currently just returns a list of users from the database and displays them.
 Your task is to extend the application.
@@ -49,7 +49,8 @@ Requirements:
     - Ensure that the email is unique.
 - [ ] Update User: add a button to each user that allows updating the email and date of birth. Please reuse the form
       from the "Add Users" task. The button should open the form prefilled with the user's data. The form should have a
-      "Save" button that triggers a PUT request to the backend to update the user in the database.
+      "Save" button that triggers a PUT request to the backend to update the user in the database. The list should also
+      be updated on success.
 
 ### Questions
 
